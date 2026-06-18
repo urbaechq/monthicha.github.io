@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fbb6c4;
-    color: #333;
+    color: #fae9d7;
 }
 
 header {
@@ -41,7 +41,7 @@ h2 {
 
 .project {
     margin: 0 0 10px;
-    color: #333;
+    color: #fae9d7;
 }
 
 ul {
@@ -52,7 +52,7 @@ ul {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #333;
+    background: #fae9d7;
     color: white;
     margin-top: 20px;
 }
