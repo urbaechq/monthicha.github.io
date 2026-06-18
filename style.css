@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fbb6c4;
-    color: #fae9d7;
+    color: #333333;
 }
 
 header {
@@ -32,27 +32,40 @@ section {
 }
 
 h2 {
-    color: #fae9d7;
+    color: #b82654;
+    border-bottom: 2px solid #f7a0b8;
+    padding-bottom: 5px;
 }
 
-.project {
-    margin-bottom: 20px;
+.project h3 {
+    color: #d84b73;
+    margin: 0 0 5px 0;
 }
 
-.project {
-    margin: 0 0 10px;
-    color: #fae9d7;
+.project p {
+    margin: 0 0 15px 0;
+    color: #555555;
 }
 
 ul {
     list-style-type: square;
     padding-left: 20px;
-  ]
+}
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #fae9d7;
+    padding: 15px 0;
+    background: #f7a0b8;
     color: white;
     margin-top: 20px;
+}
+
+footer a {
+    color: #b82654;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
