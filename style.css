@@ -7,15 +7,42 @@ body {
     color: #333333;
 }
 
+/* เอฟเฟกต์เด้งดึ๋ง */
+@keyframes cuteBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* เอฟเฟกต์โผล่มาตอนโหลด */
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 header {
     background: #f7a0b8;
     color: white;
     padding: 20px 0;
     text-align: center;
+    animation: popIn 1s ease-out;
 }
 
 header h1 {
     margin: 0;
+    animation: cuteBounce 2s infinite ease-in-out;
 }
 
 header p {
@@ -27,8 +54,16 @@ section {
     margin: 20px auto;
     max-width: 800px;
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    animation: popIn 1s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(216, 75, 115, 0.35);
 }
 
 h2 {
@@ -58,6 +93,7 @@ footer {
     background: #f7a0b8;
     color: white;
     margin-top: 20px;
+    animation: cuteBounce 3s infinite ease-in-out;
 }
 
 footer a {
@@ -67,5 +103,18 @@ footer a {
 }
 
 footer a:hover {
+    text-decoration: underline;
+}
+
+/* ปุ่มและลิงก์เด้ง */
+a,
+button {
+    transition: transform 0.2s ease;
+}
+
+a:hover,
+button:hover {
+    transform: scale(1.1);
+}
     text-decoration: underline;
 }
